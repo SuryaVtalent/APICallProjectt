@@ -1,0 +1,50 @@
+<div class="row" style="margin-top: 10px;">
+    <div class="col-sm-12">
+
+        <div class="row" style="text-align: center;background-color: yellow;">
+            <div class="col-sm-12">
+            <h1>Employee Details</h1>  
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-bordered">
+                    <thead style="background-color: green;">
+                        <tr>
+                            <th>EmployeeId</th>
+                            <th>Name</th>
+                            <th>Password</th>
+                            <th>Gender</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Salary</th>
+                            <th>Address</th>
+                            <th>DeptNo</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let emp of EmpList">
+                         <td>{{emp.empId}}</td>
+                         <td>{{emp.eName}}</td>
+                         <td>{{emp.password}}</td>
+                         <td>{{emp.gender}}</td>
+                         <td>{{emp.phone}}</td>
+                         <td>{{emp.email}}</td>
+                         <td>{{emp.salary}}</td>
+                         <td>{{emp.address}}</td>
+                         <td>{{emp.deptNo}}</td>
+                         <td>
+                            <input type="button" value="Edit" class="btn btn-success" (click)="btn_EditClk(emp.empId)" /> |
+                            <input type="button" value="Delete" class="btn btn-danger" (click)="btn_DeleteClk(emp.empId)" />
+                         </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+
+
+    </div>
+</div>
