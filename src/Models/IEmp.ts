@@ -7,4 +7,5 @@ export interface IEmp{
     salary:number;
     address:string;
     email:string;
+  deptNo:number;
 }
