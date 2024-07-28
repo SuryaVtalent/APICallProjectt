@@ -3,4 +3,6 @@ export interface IEmp{
     eName:string;
   password:string;
   phone:string;
+  salary:number;
+  address:string;
 }
