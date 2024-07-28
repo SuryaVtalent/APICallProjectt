@@ -5,4 +5,5 @@ export interface IEmp{
     phone:string;
     salary:number;
     address:string;
+    email:string;
 }
